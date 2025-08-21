@@ -5,5 +5,11 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
+  - title: "Courses"
+    url: /courses/
+  - title: "Research"
+    url: /research/
+  - title: "Why Kenny?"
+    url: /kenny/
   - title: "About"
     url: /about/
