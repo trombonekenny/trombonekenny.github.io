@@ -9,7 +9,6 @@ main:
     url: /courses/
   - title: "Why Kenny?"
     url: /kenny/
+    description: "Seriously, it's not your name."
   - title: "About"
     url: /about/
-
-
