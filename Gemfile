@@ -14,4 +14,7 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
+  # /usr/local/bundle/gems/jekyll-algolia-1.7.1/lib/jekyll/algolia/progress_bar.rb:4: warning: ostruct was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.5.0.
+  # You can add ostruct to your Gemfile or gemspec to silence this warning.
+  gem "ostruct"
 end

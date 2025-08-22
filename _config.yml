@@ -29,7 +29,7 @@ remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: /blog/page:num/
 timezone: America/Chicago # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
@@ -47,6 +47,10 @@ include:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+kramdown:
+  input: GFM
+  hard_wrap: true
+
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -61,22 +65,10 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Information technologist. Teacher. Dreamer. Musician."
   location: "Champaign, IL"
-  links:
+  links: &authorlinks
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://www.tbkenny.com/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-
-footer:
-  links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/trombonekenny"
@@ -85,7 +77,10 @@ footer:
       url: "https://github.com/trombonekenny"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/trombonekenny"
+      url: "https://instagram.com/"
+
+footer:
+  links: *authorlinks
 
 defaults:
   # _posts
